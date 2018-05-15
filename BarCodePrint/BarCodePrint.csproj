@@ -1,0 +1,229 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{108AB034-A812-4FD4-B0E4-ACAA9FF2A682}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BarCodePrint</RootNamespace>
+    <AssemblyName>BarCodePrint</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.BARCODEWIZLib, Version=1.99.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.BARCODEWIZLib, Version=1.99.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\WINDOWS\assembly\GAC_32\System.Data.OracleClient\2.0.0.0__b77a5c561934e089\System.Data.OracleClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarcodeStateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarcodeStateForm.Designer.cs">
+      <DependentUpon>BarcodeStateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSourceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSourceForm.Designer.cs">
+      <DependentUpon>DataSourceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefFilterForm.designer.cs">
+      <DependentUpon>DefFilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarcodeDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarcodeDataForm.Designer.cs">
+      <DependentUpon>BarcodeDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayoutForm.Designer.cs">
+      <DependentUpon>LayoutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogonForm.designer.cs">
+      <DependentUpon>LogonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepFilterForm.designer.cs">
+      <DependentUpon>RepFilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFilterForm.Designer.cs">
+      <DependentUpon>WorkFilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarcodeDataForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BarcodeDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarcodeStateForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BarcodeStateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarcodeStateForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BarcodeStateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DataSourceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DataSourceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefFilterForm.resx">
+      <DependentUpon>DefFilterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarcodeDataForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BarcodeDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefFilterForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DefFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LayoutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LayoutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogonForm.resx">
+      <DependentUpon>LogonForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepFilterForm.resx">
+      <DependentUpon>RepFilterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepFilterForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RepFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFilterForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WorkFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFilterForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WorkFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RewDataSet.xsc">
+      <DependentUpon>RewDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RewDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RewDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RewDataSet.xss">
+      <DependentUpon>RewDataSet.xsd</DependentUpon>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RewDataSet.cs">
+      <DependentUpon>RewDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RewDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RewDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
