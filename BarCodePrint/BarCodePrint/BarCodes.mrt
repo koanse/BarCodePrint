@@ -1,0 +1,971 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="9">
+      <Categories Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Categories</Alias>
+        <Columns isList="true" count="3">
+          <value>CategoryID,System.Int32</value>
+          <value>CategoryName,System.String</value>
+          <value>Description,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Categories</Name>
+        <NameInSource>Demo.Categories</NameInSource>
+      </Categories>
+      <Customers Ref="3" type="DataTableSource" isKey="true">
+        <Alias>Customers</Alias>
+        <Columns isList="true" count="11">
+          <value>CustomerID,System.String</value>
+          <value>CompanyName,System.String</value>
+          <value>ContactName,System.String</value>
+          <value>ContactTitle,System.String</value>
+          <value>Address,System.String</value>
+          <value>City,System.String</value>
+          <value>Region,System.String</value>
+          <value>PostalCode,System.String</value>
+          <value>Country,System.String</value>
+          <value>Phone,System.String</value>
+          <value>Fax,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Customers</Name>
+        <NameInSource>Demo.Customers</NameInSource>
+      </Customers>
+      <Employees Ref="4" type="DataTableSource" isKey="true">
+        <Alias>Employees</Alias>
+        <Columns isList="true" count="14">
+          <value>EmployeeID,System.Int32</value>
+          <value>LastName,System.String</value>
+          <value>FirstName,System.String</value>
+          <value>Title,System.String</value>
+          <value>BirthDate,System.DateTime</value>
+          <value>HireDate,System.DateTime</value>
+          <value>Address,System.String</value>
+          <value>City,System.String</value>
+          <value>Region,System.String</value>
+          <value>PostalCode,System.String</value>
+          <value>Country,System.String</value>
+          <value>HomePhone,System.String</value>
+          <value>Notes,System.String</value>
+          <value>ReportsTo,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Employees</Name>
+        <NameInSource>Demo.Employees</NameInSource>
+      </Employees>
+      <Order_x0020_Details Ref="5" type="DataTableSource" isKey="true">
+        <Alias>Order Details</Alias>
+        <Columns isList="true" count="5">
+          <value>OrderID,System.Int32</value>
+          <value>ProductID,System.Int32</value>
+          <value>UnitPrice,System.Decimal</value>
+          <value>Quantity,System.Int16</value>
+          <value>Discount,System.Single</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Order Details</Name>
+        <NameInSource>Demo.Order Details</NameInSource>
+      </Order_x0020_Details>
+      <Orders Ref="6" type="DataTableSource" isKey="true">
+        <Alias>Orders</Alias>
+        <Columns isList="true" count="14">
+          <value>OrderID,System.Int32</value>
+          <value>CustomerID,System.String</value>
+          <value>EmployeeID,System.Int32</value>
+          <value>OrderDate,System.DateTime</value>
+          <value>RequiredDate,System.DateTime</value>
+          <value>ShippedDate,System.DateTime</value>
+          <value>ShipVia,System.Int32</value>
+          <value>Freight,System.Decimal</value>
+          <value>ShipName,System.String</value>
+          <value>ShipAddress,System.String</value>
+          <value>ShipCity,System.String</value>
+          <value>ShipRegion,System.String</value>
+          <value>ShipPostalCode,System.String</value>
+          <value>ShipCountry,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Orders</Name>
+        <NameInSource>Demo.Orders</NameInSource>
+      </Orders>
+      <Products Ref="7" type="DataTableSource" isKey="true">
+        <Alias>Products</Alias>
+        <Columns isList="true" count="7">
+          <value>ProductID,System.Int32</value>
+          <value>ProductName,System.String</value>
+          <value>SupplierID,System.Int32</value>
+          <value>CategoryID,System.Int32</value>
+          <value>QuantityPerUnit,System.String</value>
+          <value>UnitPrice,System.Decimal</value>
+          <value>UnitsInStock,System.Int16</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Products</Name>
+        <NameInSource>Demo.Products</NameInSource>
+      </Products>
+      <Shippers Ref="8" type="DataTableSource" isKey="true">
+        <Alias>Shippers</Alias>
+        <Columns isList="true" count="3">
+          <value>ShipperID,System.Int32</value>
+          <value>CompanyName,System.String</value>
+          <value>Phone,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Shippers</Name>
+        <NameInSource>Demo.Shippers</NameInSource>
+      </Shippers>
+      <Suppliers Ref="9" type="DataTableSource" isKey="true">
+        <Alias>Suppliers</Alias>
+        <Columns isList="true" count="12">
+          <value>SupplierID,System.Int32</value>
+          <value>CompanyName,System.String</value>
+          <value>ContactName,System.String</value>
+          <value>ContactTitle,System.String</value>
+          <value>Address,System.String</value>
+          <value>City,System.String</value>
+          <value>Region,System.String</value>
+          <value>PostalCode,System.String</value>
+          <value>Country,System.String</value>
+          <value>Phone,System.String</value>
+          <value>Fax,System.String</value>
+          <value>HomePage,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Suppliers</Name>
+        <NameInSource>Demo.Suppliers</NameInSource>
+      </Suppliers>
+      <Countries Ref="10" type="DataTableSource" isKey="true">
+        <Alias>Countries</Alias>
+        <Columns isList="true" count="3">
+          <value>CountriesID,System.Int32</value>
+          <value>Flag,System.Byte[]</value>
+          <value>CountryName,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Countries</Name>
+        <NameInSource>Demo.Countries</NameInSource>
+      </Countries>
+    </DataSources>
+    <Relations isList="true" count="8">
+      <ParentEmployees Ref="11" type="DataRelation" isKey="true">
+        <Alias>Employees</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>ReportsTo</value>
+        </ChildColumns>
+        <ChildSource isRef="4" />
+        <Dictionary isRef="1" />
+        <Name>ParentEmployees</Name>
+        <NameInSource>EmployeesEmployees</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>EmployeeID</value>
+        </ParentColumns>
+        <ParentSource isRef="4" />
+      </ParentEmployees>
+      <ParentProducts Ref="12" type="DataRelation" isKey="true">
+        <Alias>Products</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>ProductID</value>
+        </ChildColumns>
+        <ChildSource isRef="5" />
+        <Dictionary isRef="1" />
+        <Name>ParentProducts</Name>
+        <NameInSource>ProductsOrder_Details</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>ProductID</value>
+        </ParentColumns>
+        <ParentSource isRef="7" />
+      </ParentProducts>
+      <ParentOrders Ref="13" type="DataRelation" isKey="true">
+        <Alias>Orders</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>OrderID</value>
+        </ChildColumns>
+        <ChildSource isRef="5" />
+        <Dictionary isRef="1" />
+        <Name>ParentOrders</Name>
+        <NameInSource>OrdersOrder_Details</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>OrderID</value>
+        </ParentColumns>
+        <ParentSource isRef="6" />
+      </ParentOrders>
+      <ParentCustomers Ref="14" type="DataRelation" isKey="true">
+        <Alias>Customers</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>CustomerID</value>
+        </ChildColumns>
+        <ChildSource isRef="6" />
+        <Dictionary isRef="1" />
+        <Name>ParentCustomers</Name>
+        <NameInSource>CustomersOrders</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>CustomerID</value>
+        </ParentColumns>
+        <ParentSource isRef="3" />
+      </ParentCustomers>
+      <ParentShippers Ref="15" type="DataRelation" isKey="true">
+        <Alias>Shippers</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>ShipVia</value>
+        </ChildColumns>
+        <ChildSource isRef="6" />
+        <Dictionary isRef="1" />
+        <Name>ParentShippers</Name>
+        <NameInSource>ShippersOrders</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>ShipperID</value>
+        </ParentColumns>
+        <ParentSource isRef="8" />
+      </ParentShippers>
+      <ParentEmployees Ref="16" type="DataRelation" isKey="true">
+        <Alias>Employees</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>EmployeeID</value>
+        </ChildColumns>
+        <ChildSource isRef="6" />
+        <Dictionary isRef="1" />
+        <Name>ParentEmployees</Name>
+        <NameInSource>EmployeesOrders</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>EmployeeID</value>
+        </ParentColumns>
+        <ParentSource isRef="4" />
+      </ParentEmployees>
+      <ParentCategories Ref="17" type="DataRelation" isKey="true">
+        <Alias>Categories</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>CategoryID</value>
+        </ChildColumns>
+        <ChildSource isRef="7" />
+        <Dictionary isRef="1" />
+        <Name>ParentCategories</Name>
+        <NameInSource>CategoriesProducts</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>CategoryID</value>
+        </ParentColumns>
+        <ParentSource isRef="2" />
+      </ParentCategories>
+      <ParentSuppliers Ref="18" type="DataRelation" isKey="true">
+        <Alias>Suppliers</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>SupplierID</value>
+        </ChildColumns>
+        <ChildSource isRef="7" />
+        <Dictionary isRef="1" />
+        <Name>ParentSuppliers</Name>
+        <NameInSource>SuppliersProducts</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>SupplierID</value>
+        </ParentColumns>
+        <ParentSource isRef="9" />
+      </ParentSuppliers>
+    </Relations>
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <GlobalizationStrings isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="19" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="47">
+        <BarCode1 Ref="20" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="21" type="Stimulsoft.Report.Components.BarCodes.StiEAN13BarCodeType" isKey="true" />
+          <ClientRectangle>3.99,9,3.81,2.79</ClientRectangle>
+          <Code>0123456789012</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode1</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode1>
+        <BarCode2 Ref="22" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="23" type="Stimulsoft.Report.Components.BarCodes.StiEAN8BarCodeType" isKey="true" />
+          <ClientRectangle>0.61,9,2.79,2.39</ClientRectangle>
+          <Code>12345678</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode2</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode2>
+        <BarCode3 Ref="24" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="25" type="Stimulsoft.Report.Components.BarCodes.StiCode128aBarCodeType" isKey="true" />
+          <ClientRectangle>0.39,12.99,4.41,2.01</ClientRectangle>
+          <Code>ABC123</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode3</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode3>
+        <BarCode4 Ref="26" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="27" type="Stimulsoft.Report.Components.BarCodes.StiCode128bBarCodeType" isKey="true" />
+          <ClientRectangle>5.19,13,5.61,2.01</ClientRectangle>
+          <Code>ABCabc123</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode4</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode4>
+        <BarCode5 Ref="28" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="29" type="Stimulsoft.Report.Components.BarCodes.StiCode128cBarCodeType" isKey="true" />
+          <ClientRectangle>11.19,12.99,5.21,2.01</ClientRectangle>
+          <Code>0123456789012345</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode5</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode5>
+        <BarCode6 Ref="30" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="31" type="Stimulsoft.Report.Components.BarCodes.StiCode39BarCodeType" isKey="true" />
+          <ClientRectangle>0.2,2.6,4.81,2.01</ClientRectangle>
+          <Code>ABC123</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode6</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode6>
+        <Text1 Ref="32" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.4,8.19,2.99,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text1</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>EAN-13</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="33" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text1>
+        <Text2 Ref="34" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.61,8.19,2.79,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text2</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>EAN-8</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="35" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text2>
+        <Text3 Ref="36" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.8,12.2,3.59,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text3</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>Code 128a</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="37" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text3>
+        <Text4 Ref="38" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5.6,12.19,4.79,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text4</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>Code 128b</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="39" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text4>
+        <Text8 Ref="40" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>11.6,12.2,4.39,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text8</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>Code 128c</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="41" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text8>
+        <Text9 Ref="42" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.6,1.81,3.99,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text9</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>Code 39</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="43" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text9>
+        <BarCode7 Ref="44" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="45" type="Stimulsoft.Report.Components.BarCodes.StiCodabarBarCodeType" isKey="true" />
+          <ClientRectangle>9.19,19.6,3.99,2.01</ClientRectangle>
+          <Code>A12345678B</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode7</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode7>
+        <Text10 Ref="46" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9.6,18.81,3.19,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text10</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>Codabar</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="47" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text10>
+        <BarCode8 Ref="48" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="49" type="Stimulsoft.Report.Components.BarCodes.StiUpcABarCodeType" isKey="true" />
+          <ClientRectangle>10.2,8.99,3.81,2.79</ClientRectangle>
+          <Code>1234567890123</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode8</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode8>
+        <Text11 Ref="50" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>10.61,8.2,2.99,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text11</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>UPC-A</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="51" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text11>
+        <BarCode9 Ref="52" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="53" type="Stimulsoft.Report.Components.BarCodes.StiUpcEBarCodeType" isKey="true" />
+          <ClientRectangle>14.59,8.99,2.39,2.79</ClientRectangle>
+          <Code>01234567</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode9</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode9>
+        <Text12 Ref="54" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>14.59,8.2,2.21,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text12</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>UPC-E</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="55" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text12>
+        <BarCode10 Ref="56" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="57" type="Stimulsoft.Report.Components.BarCodes.StiUpcSup2BarCodeType" isKey="true" />
+          <ClientRectangle>17,8.99,1.19,2.79</ClientRectangle>
+          <Code>02</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode10</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode10>
+        <Text13 Ref="58" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>16.8,8.2,1.8,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text13</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>UPC-Sup2</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="59" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text13>
+        <BarCode11 Ref="60" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="61" type="Stimulsoft.Report.Components.BarCodes.StiUpcSup5BarCodeType" isKey="true" />
+          <ClientRectangle>7.8,9,1.8,2.79</ClientRectangle>
+          <Code>00321</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode11</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode11>
+        <Text14 Ref="62" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>7.8,8.19,1.8,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text14</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>UPC-Sup5</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="63" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text14>
+        <BarCode12 Ref="64" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="65" type="Stimulsoft.Report.Components.BarCodes.StiInterleaved2of5BarCodeType" isKey="true" />
+          <ClientRectangle>5.39,19.6,3.21,1.8</ClientRectangle>
+          <Code>12345678</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode12</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode12>
+        <Text15 Ref="66" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5.39,18.79,3.2,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text15</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>2 of 5 Interleaved</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="67" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text15>
+        <BarCode13 Ref="68" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="69" type="Stimulsoft.Report.Components.BarCodes.StiStandard2of5BarCodeType" isKey="true" />
+          <ClientRectangle>0.4,19.6,4.6,1.8</ClientRectangle>
+          <Code>12345678</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode13</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode13>
+        <Text16 Ref="70" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.81,18.79,3.61,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text16</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>2 of 5 Standard</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="71" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text16>
+        <BarCode14 Ref="72" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="73" type="Stimulsoft.Report.Components.BarCodes.StiCode39ExtBarCodeType" isKey="true" />
+          <ClientRectangle>5.4,2.59,5.6,2.01</ClientRectangle>
+          <Code>Abc123</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode14</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode14>
+        <Text17 Ref="74" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5.8,1.81,4.81,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text17</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>Code 39 Extended</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="75" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text17>
+        <BarCode15 Ref="76" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="77" type="Stimulsoft.Report.Components.BarCodes.StiEAN128aBarCodeType" isKey="true" />
+          <ClientRectangle>0.39,16.2,4.41,2.01</ClientRectangle>
+          <Code>ABC123</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode15</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode15>
+        <BarCode16 Ref="78" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="79" type="Stimulsoft.Report.Components.BarCodes.StiEAN128bBarCodeType" isKey="true" />
+          <ClientRectangle>5.19,16.21,5.61,2.01</ClientRectangle>
+          <Code>ABCabc123</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode16</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode16>
+        <BarCode17 Ref="80" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="81" type="Stimulsoft.Report.Components.BarCodes.StiEAN128cBarCodeType" isKey="true" />
+          <ClientRectangle>11.19,16.2,5.21,2.01</ClientRectangle>
+          <Code>0123456789012345</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode17</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode17>
+        <Text18 Ref="82" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.8,15.41,3.59,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text18</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>EAN-128a</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="83" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text18>
+        <Text19 Ref="84" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5.6,15.4,4.79,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text19</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>EAN-128b</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="85" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text19>
+        <Text20 Ref="86" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>11.6,15.41,4.39,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text20</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>EAN-128c</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="87" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text20>
+        <Text5 Ref="88" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0,19,1.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,36,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text5</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>Bar Codes</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="89" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text5>
+        <BarCode18 Ref="90" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="91" type="Stimulsoft.Report.Components.BarCodes.StiPlesseyBarCodeType" isKey="true" />
+          <ClientRectangle>9.59,5.79,4.4,1.8</ClientRectangle>
+          <Code>1234567</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode18</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode18>
+        <Text6 Ref="92" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>10,5.01,3.61,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text6</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>Plessey</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="93" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text6>
+        <BarCode19 Ref="94" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="95" type="Stimulsoft.Report.Components.BarCodes.StiMsiBarCodeType" isKey="true">
+            <CheckSum1>Modulo10</CheckSum1>
+          </BarCodeType>
+          <ClientRectangle>14.4,5.79,4.4,1.8</ClientRectangle>
+          <Code>1234567</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode19</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode19>
+        <Text7 Ref="96" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>14.8,5.01,3.59,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text7</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>Msi</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="97" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text7>
+        <BarCode20 Ref="98" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="99" type="Stimulsoft.Report.Components.BarCodes.StiCode93BarCodeType" isKey="true" />
+          <ClientRectangle>0.2,5.79,3.99,2.01</ClientRectangle>
+          <Code>ABC123</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode20</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode20>
+        <BarCode21 Ref="100" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="101" type="Stimulsoft.Report.Components.BarCodes.StiCode93ExtBarCodeType" isKey="true" />
+          <ClientRectangle>4.6,5.81,4.6,2.01</ClientRectangle>
+          <Code>Abc123</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode21</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode21>
+        <Text21 Ref="102" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.6,5,3.2,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text21</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>Code 93</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="103" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text21>
+        <Text22 Ref="104" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5,5,3.79,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text22</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>Code 93 Extended</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="105" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text22>
+        <BarCode22 Ref="106" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="107" type="Stimulsoft.Report.Components.BarCodes.StiPostnetBarCodeType" isKey="true" />
+          <ClientRectangle>0.4,23.6,7.4,1.2</ClientRectangle>
+          <Code>12345678901</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode22</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode22>
+        <Text23 Ref="108" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.8,22.8,6.6,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text23</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>Postnet</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="109" type="GeneralFormat" isKey="true" />
+          <VertAlignment>Center</VertAlignment>
+        </Text23>
+        <BarCode23 Ref="110" type="Stimulsoft.Report.Components.StiBarCode" isKey="true">
+          <BackColor>White</BackColor>
+          <BarCodeType Ref="111" type="Stimulsoft.Report.BarCodes.StiDataMatrixBarCodeType" isKey="true" />
+          <ClientRectangle>13.2,2.4,2.2,1.8</ClientRectangle>
+          <Code>12345678901</Code>
+          <Conditions isList="true" count="0" />
+          <ForeColor>Black</ForeColor>
+          <Name>BarCode23</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+        </BarCode23>
+        <Text24 Ref="112" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>11.8,1.8,5,0.61</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <HorAlignment>Center</HorAlignment>
+          <LinesOfUnderline>None</LinesOfUnderline>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text24</Name>
+          <Page isRef="19" />
+          <Parent isRef="19" />
+          <Text>DataMatrix</Text>
+          <TextBrush>SaddleBrown</TextBrush>
+          <TextFormat Ref="113" type="GeneralFormat" isKey="true" />
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text24>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>5b7a9acca68746608f8d9f47bdda7cbc</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <Page isRef="19" />
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="114" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="115" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Bar Codes</ReportAlias>
+  <ReportChanged>5/22/2007 11:21:13 AM</ReportChanged>
+  <ReportCreated>5/29/2004 10:59:00 AM</ReportCreated>
+  <ReportGuid>0e5d880477c3490391e5a19b063bfaab</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2007.3.36</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Components;
+using Stimulsoft.Base.Drawing;
+
+namespace StiReports
+{
+    
+    public class Report : Stimulsoft.Report.StiReport
+    {
+            
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+        
+        #region StiReport Designer generated code - do not modify#endregion StiReport Designer generated code - do not modify
+	}
+}</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

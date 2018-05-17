@@ -1,0 +1,8 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\BarCodePrint.Properties.Resources.resources
+obj\Debug\BarCodePrint.csproj.GenerateResource.Cache
+bin\Debug\BarCodePrint.exe
+bin\Debug\BarCodePrint.pdb
+obj\Debug\BarCodePrint.exe
+obj\Debug\BarCodePrint.pdb
+obj\Debug\BarCodePrint.Form1.resources
